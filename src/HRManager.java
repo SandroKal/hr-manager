@@ -42,6 +42,7 @@ public class HRManager {
         }
     }
 
+
     private static void showMenu(int selectedMenuId) throws ParseException {
         switch (selectedMenuId) {
             case 1:

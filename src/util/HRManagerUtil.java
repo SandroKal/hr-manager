@@ -4,6 +4,7 @@ import java.security.SecureRandom;
 import java.text.SimpleDateFormat;
 import java.util.UUID;
 
+
 public class HRManagerUtil {
 
     public static SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.yyyy");
