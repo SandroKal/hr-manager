@@ -1,5 +1,6 @@
 import view.View;
 
+import java.text.ParseException;
 import java.util.Scanner;
 
 public class HRManager {
@@ -33,12 +34,15 @@ public class HRManager {
     }
 
     private static void selectMenu() {
-        //TODO: add error handling
-        int selectedMenuId = scanner.nextInt();
-        showMenu(selectedMenuId);
+        try {
+            int selectedMenuId = scanner.nextInt();
+            showMenu(selectedMenuId);
+        } catch (Exception e) {
+            System.out.println("Es ist ein Fehler aufgetretten. "+ e);
+        }
     }
 
-    private static void showMenu(int selectedMenuId) {
+    private static void showMenu(int selectedMenuId) throws ParseException {
         switch (selectedMenuId) {
             case 1:
                 System.exit(0);

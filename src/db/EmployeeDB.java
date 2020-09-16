@@ -10,22 +10,18 @@ import util.HRManagerUtil;
 
 public class EmployeeDB {
 
-    private List<Employee> employees;
+    private static List<Employee> employees;
 
     public EmployeeDB() {
         addMockData();
     }
 
-    public void addEmployee(Employee employee) {
-        //TODO: Implement
+    public static void deleteEmployee(Employee employee, int deleteRow)  {
+        employees.remove(deleteRow);
     }
 
-    public void deleteEmployee(Employee employee) {
-        //TODO: Implement
-    }
-
-    public void updateEmployee(Employee employee) {
-        //TODO: Implement
+    public static void updateEmployee(Employee employee, int updateRow) {
+        employees.remove(updateRow);
     }
 
     private void addMockData() {
